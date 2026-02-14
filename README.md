@@ -26,7 +26,7 @@ Explore our work directly through these organized folders:
 ### 🏭 [Steel & Industrial Structures](pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/Steel_Mangoli_01.jpg)
 *Factories in Maluku, Toyota Workshops, and Fuel Systems.*
 
-### 🚜 [Civil & Infrastructure](Infras_Lahat_37.jpg)
+### 🚜 [Civil & Infrastructure](Infras_Lahat_40.jpg)
 *Mining Infrastructure, Cut & Fill (Malang), and Water Management.*
 
 ---
