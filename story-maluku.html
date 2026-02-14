@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint: Steel Structure Mangoli | YMT</title>
+    <style>
+        :root {
+            --blueprint-blue: #003366;
+            --text: #333;
+            --bg: #f8f9fa;
+            --line: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Courier New", Courier, monospace; background: var(--bg); color: var(--text); padding: 20px; }
+        
+        .blueprint-container { max-width: 1000px; margin: 40px auto; background: white; border: 2px solid var(--blueprint-blue); padding: 40px; box-shadow: 10px 10px 0px var(--blueprint-blue); }
+        
+        .header-meta { border-bottom: 2px solid var(--blueprint-blue); padding-bottom: 20px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .header-meta h1 { text-transform: uppercase; font-size: 1.8rem; color: var(--blueprint-blue); }
+        .header-meta p { font-size: 0.8rem; font-weight: bold; }
+
+        .back-nav { margin-bottom: 20px; }
+        .back-nav a { text-decoration: none; color: var(--blueprint-blue); font-weight: bold; font-size: 0.9rem; }
+
+        /* Step Workflow */
+        .workflow { position: relative; padding-left: 50px; }
+        .workflow::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: var(--blueprint-blue); border-left: 2px dashed #ccc; }
+        
+        .step { position: relative; margin-bottom: 60px; }
+        .step-num { position: absolute; left: -45px; width: 30px; height: 30px; background: var(--blueprint-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8rem; }
+        
+        .step-content h3 { text-transform: uppercase; margin-bottom: 15px; font-size: 1.1rem; color: var(--blueprint-blue); }
+        .step-content p { font-family: sans-serif; font-size: 0.95rem; line-height: 1.6; color: #555; max-width: 600px; margin-bottom: 20px; }
+        
+        .step-image { width: 100%; max-width: 700px; border: 1px solid var(--line); padding: 10px; background: #fff; }
+        .step-image img { width: 100%; height: auto; display: block; filter: grayscale(20%); }
+        .step-image:hover img { filter: none; }
+        
+        .technical-spec { margin-top: 10px; font-size: 0.75rem; color: #888; text-transform: uppercase; }
+
+        @media (max-width: 768px) {
+            .blueprint-container { padding: 20px; }
+            .header-meta { flex-direction: column; align-items: flex-start; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="blueprint-container">
+    <nav class="back-nav"><a href="index.html">← RETURN TO FEED</a></nav>
+    
+    <div class="header-meta">
+        <div>
+            <p>PROJECT ID: YMT-2025-MLK</p>
+            <h1>Steel Structure Mangoli</h1>
+        </div>
+        <div style="text-align: right;">
+            <p>LOCATION: MALUKU UTARA</p>
+            <p>STATUS: 100% COMMISSIONED</p>
+        </div>
+    </div>
+
+    <div class="workflow">
+        <!-- Step 1 -->
+        <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+                <h3>Technical Survey & Land Clearing</h3>
+                <p>Tahap awal melibatkan pemetaan koordinat struktur di area Mangoli. Tim melakukan land clearing dan penyesuaian elevasi tanah untuk memastikan kestabilan pondasi baja berat di lokasi remote.</p>
+                <div class="step-image">
+                    <img src="pics/Other_Project_01/Misc_Proj_1_01.jpg" alt="Survey Phase">
+                    <div class="technical-spec">Ref: Earthworks & Grading Division</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+                <h3>Primary Structure Erection</h3>
+                <p>Ereksi kolom H-Beam utama. Tantangan logistik di Maluku Utara diatasi dengan manajemen pengiriman material yang presisi dari workshop pusat ke site.</p>
+                <div class="step-image">
+                    <img src="pics/Steel structure project at Mangoli Maluku Utara/Steel_Mangoli_01.jpg" alt="Erection Phase">
+                    <div class="technical-spec">Ref: Heavy Steel Division / H-Beam Structure</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+                <h3>Secondary Structure & Roofing</h3>
+                <p>Pemasangan gording dan penutupan atap menggunakan metal sheet. Dilakukan dengan standar K3 yang ketat mengingat ketinggian struktur dan kondisi cuaca lapangan.</p>
+                <div class="step-image">
+                    <img src="pics/Work Shop project Toyota Cikunir- Bekasi/Toyota_Wshop_01.jpg" alt="Roofing Phase">
+                    <div class="technical-spec">Ref: Finishing & Industrial Roofing</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-content">
+                <h3>Final Commissioning</h3>
+                <p>Inspeksi akhir kekuatan sambungan (bolt & welding inspection) sebelum serah terima kepada owner. Proyek selesai tepat waktu dengan standar operasional industri.</p>
+                <div class="step-image">
+                    <img src="pics/Steel structure project at Mangoli Maluku Utara/Steel_Mangoli_02.jpg" alt="Handover">
+                    <div class="technical-spec">Ref: Quality Assurance / Final Handover</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
