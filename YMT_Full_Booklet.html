@@ -21,14 +21,14 @@
             @page { size: A4; margin: 0; }
             body { -webkit-print-color-adjust: exact; background: white; }
             .no-print { display: none; }
-            .page { margin: 0; border: none; box-shadow: none; }
+            .page { margin: 0 !important; border: none !important; box-shadow: none !important; }
             .page-break { page-break-after: always; }
         }
 
         .page {
             width: 210mm;
             height: 297mm;
-            padding: 20mm;
+            padding: 25mm;
             margin: 10px auto;
             background: white;
             position: relative;
@@ -36,8 +36,13 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
+        /* Full-bleed for Cover */
+        .page-cover { padding: 0 !important; }
+
         /* --- Page 1: Cover --- */
         .cover {
+            width: 100%;
+            height: 100%;
             background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), url('pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/Steel_Mangoli_01.jpg');
             background-size: cover;
             background-position: center;
@@ -85,7 +90,7 @@
 <button class="btn-print no-print" onclick="window.print()">GENERATE MASTER BOOKLET</button>
 
 <!-- PAGE 1: COVER -->
-<div class="page cover page-break">
+<div class="page page-cover cover page-break">
     <h2>Company Profile</h2>
     <h1>YMT</h1>
     <h2>CV. Yudhistira Mandala Teknik</h2>
@@ -130,7 +135,7 @@
         <div class="step-box">
             <h4>Technical Survey</h4>
             <p>Pemetaan koordinat GPS dan elevasi tanah untuk stabilitas pondasi baja berat.</p>
-            <img src="pics/Other_Project_01/Misc_Proj_1_01.jpg" class="step-img-sub">
+            <img src="pics/Other_Project_01/Misc_Proj_1_01.jpg" class="sub-img" style="width:100%; height:130px; object-fit:cover; border:1px solid #eee;">
         </div>
     </div>
     <div class="footer"><span>TECHNICAL STORY: DIVISION 01</span><span>Page 03</span></div>
@@ -198,7 +203,7 @@
     <h2 class="section-title">Master Project History</h2>
     <table>
         <thead>
-            <tr><th>Tahun</th><th>Nama Proyek / Klien</th><th>Lokasi</th><th>Kategori</th></tr>
+            <tr><th>Tahun</th><th>Proyek / Klien</th><th>Lokasi</th><th>Kategori</th></tr>
         </thead>
         <tbody>
             <tr><td class="year">2025</td><td>Steel Structure Mangoli</td><td>Maluku Utara</td><td>Konstruksi Baja</td></tr>
