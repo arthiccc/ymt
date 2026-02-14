@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV. Yudhistira Mandala Teknik | Portfolio</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #0066cc;
+            --gray: #f4f4f4;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background: var(--bg); 
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            padding: 4rem 2rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header h1 { font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem; }
+        header p { color: #666; font-size: 0.9rem; }
+        
+        .nav-links {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Instagram-style Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            background: var(--gray);
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        footer {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--gray);
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .gallery { grid-template-columns: repeat(2, 1fr); padding: 0 4px; }
+            header { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Yudhistira Mandala Teknik</h1>
+    <p>Solusi Teknik Terintegrasi Sejak 1993</p>
+    <div class="nav-links">
+        <a href="Company_Profile.md">Profile</a>
+        <a href="Portfolio_Booklet.md">Projects</a>
+        <a href="COMPANY PROFILE YMT 3.0.pdf" target="_blank">PDF Docs</a>
+    </div>
+</header>
+
+<div class="gallery">
+    <!-- Steel & Heavy Structure -->
+    <div class="gallery-item">
+        <img src="pics/Steel structure project at Mangoli Maluku Utara/Steel_Mangoli_01.jpg" alt="Steel Structure">
+        <div class="overlay">Industrial Steel Structure - Mangoli</div>
+    </div>
+    
+    <!-- Hospitality -->
+    <div class="gallery-item">
+        <img src="Bali_Cottage_19.jpg" alt="Bali Cottage">
+        <div class="overlay">Resort Construction - Nusa Penida, Bali</div>
+    </div>
+
+    <!-- Electrical -->
+    <div class="gallery-item">
+        <img src="Elec_Panel_01.jpg" alt="Electrical Panel">
+        <div class="overlay">Precision PLC Control Systems</div>
+    </div>
+
+    <!-- Infrastructure -->
+    <div class="gallery-item">
+        <img src="Infras_Lahat_40.jpg" alt="Mining Infras">
+        <div class="overlay">Mining Infrastructure - Lahat, Sumsel</div>
+    </div>
+
+    <!-- Environmental -->
+    <div class="gallery-item">
+        <img src="RSUD_Retensi_66.jpg" alt="Retention Pond">
+        <div class="overlay">Water Management - RSUD Empat Lawang</div>
+    </div>
+
+    <!-- Interior -->
+    <div class="gallery-item">
+        <img src="pics/Interior project Hotel Crowne Jakarta Pusat/Crowne_Interior_01.jpg" alt="Hotel Interior">
+        <div class="overlay">High-End Interior Fit-out - Crowne Plaza</div>
+    </div>
+
+    <!-- Industrial -->
+    <div class="gallery-item">
+        <img src="pics/Fuel Tank Project Borneo Prima Kelimatan Selatan/FuelTank_Borneo_01.jpg" alt="Fuel Tank">
+        <div class="overlay">Fuel Storage Systems - South Kalimantan</div>
+    </div>
+
+    <!-- Civil -->
+    <div class="gallery-item">
+        <img src="pics/Cut & Fill project at Batu - Malang/Land_Malang_01.jpg" alt="Earthworks">
+        <div class="overlay">Land Development (Cut & Fill) - Malang</div>
+    </div>
+
+    <!-- Workshop -->
+    <div class="gallery-item">
+        <img src="pics/Work Shop project Toyota Cikunir- Bekasi/Toyota_Wshop_01.jpg" alt="Workshop">
+        <div class="overlay">Toyota Workshop Construction - Bekasi</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 CV. Yudhistira Mandala Teknik | Bekasi, Indonesia</p>
+    <p>Jl. Mangga Blok C 33 No. 34, Kompas Indah Estate, Tambun Selatan, Bekasi 17510</p>
+</footer>
+
+</body>
+</html>
