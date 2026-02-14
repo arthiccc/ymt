@@ -17,16 +17,16 @@ Click the links below to explore our project divisions and documentation:
 ## 🏗️ Project Divisions (Click to View Images)
 Explore our work directly through these organized folders:
 
-### ⚡ [Electrical & Automation](pics/Elec_Panel_01.jpg)
+### ⚡ [Electrical & Automation](Elec_Panel_01.jpg)
 *Panel PLC, Industrial Wiring, and Power Distribution.*
 
-### 🏨 [Hospitality & Residential](pics/Bali_Cottage_19.jpg)
+### 🏨 [Hospitality & Residential](Bali_Cottage_19.jpg)
 *Resorts (Nusa Penida), Schools (St. Markus), and Luxury Housing.*
 
-### 🏭 [Steel & Industrial Structures](pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/)
+### 🏭 [Steel & Industrial Structures](pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/Steel_Mangoli_01.jpg)
 *Factories in Maluku, Toyota Workshops, and Fuel Systems.*
 
-### 🚜 [Civil & Infrastructure](pics/Infras_Lahat_37.jpg)
+### 🚜 [Civil & Infrastructure](Infras_Lahat_37.jpg)
 *Mining Infrastructure, Cut & Fill (Malang), and Water Management.*
 
 ---

@@ -87,4 +87,4 @@ Sepanjang tiga dekade, CV. Yudhistira Mandala Teknik telah menyelesaikan berbaga
 ## 📃 Dokumen Legalitas Terlampir
 *   Akta Pendirian No. 62 (30 Juni 1993)
 *   SIUP Menengah No. 503.09/2-0549/DPMPPT/PM-00/VI/2014
-*   NPWP: 35.485.398.8-435.000
+*   NPWP: [Tersedia berdasarkan permintaan]
