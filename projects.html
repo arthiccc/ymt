@@ -4,49 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project History | CV. Yudhistira Mandala Teknik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --bg: #ffffff; --text: #1a1a1a; --accent: #0066cc; --gray: #f4f4f4; }
+        :root { 
+            --bg: #ffffff; 
+            --text: #1a1a1a; 
+            --accent: #0066cc; 
+            --gray: #f8f9fa;
+            --border: #e9ecef;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: var(--text); padding: 2rem; }
-        .container { max-width: 900px; margin: 4rem auto; }
-        h1 { font-size: 2.5rem; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px; }
-        .back-nav { margin-bottom: 2rem; }
-        .back-nav a { text-decoration: none; color: #888; font-size: 0.9rem; text-transform: uppercase; font-weight: bold; }
-        
-        table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
-        th { text-align: left; padding: 1rem; background: var(--gray); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; }
-        td { padding: 1rem; border-bottom: 1px solid var(--gray); font-size: 0.9rem; }
-        tr:hover { background: #fafafa; }
-        
-        .era-tag { font-size: 0.7rem; padding: 2px 8px; background: #eee; border-radius: 10px; margin-right: 5px; }
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            line-height: 1.6; 
+            color: var(--text); 
+            background-color: var(--bg);
+        }
+        header {
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+            background: var(--gray);
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-weight: 300;
+            color: #666;
+            letter-spacing: 2px;
+        }
+        .container { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 4rem 2rem 6rem; 
+        }
+        .back-nav { margin-bottom: 3rem; }
+        .back-nav a { 
+            text-decoration: none; 
+            color: var(--accent); 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .project-section { margin-bottom: 5rem; }
+        .section-title {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+            margin-left: 20px;
+        }
+
+        .detailed-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 4rem;
+        }
+        .project-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        .project-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-color: var(--accent);
+        }
+        .project-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .project-card p {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        .project-card .location {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+        }
+        .history-table th {
+            text-align: left;
+            padding: 1.2rem;
+            background: #1a1a1a;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .history-table td {
+            padding: 1.2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .history-table tr:hover { background: var(--gray); }
+        .year-col { font-weight: 700; color: var(--accent); width: 80px; }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .history-table thead { display: none; }
+            .history-table tr { display: block; margin-bottom: 20px; border: 1px solid var(--border); }
+            .history-table td { display: block; text-align: right; padding-left: 50%; position: relative; }
+            .history-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                width: 45%;
+                text-align: left;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="back-nav"><a href="index.html">← Back to Gallery</a></nav>
+    <header>
         <h1>Project History</h1>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Tahun</th>
-                    <th>Nama Proyek / Klien</th>
-                    <th>Lokasi</th>
-                    <th>Kategori</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>2025</td><td>Steel Structure Mangoli</td><td>Maluku Utara</td><td>Konstruksi Baja</td></tr>
-                <tr><td>2025</td><td>Komang Beach Cottages</td><td>Nusa Penida, Bali</td><td>Struktur Kayu</td></tr>
-                <tr><td>2024</td><td>PT. Muara Alam Sejahtera</td><td>Lahat, Sumsel</td><td>Infrastruktur Tambang</td></tr>
-                <tr><td>2024</td><td>Fuel Tank Borneo Prima</td><td>Kalsel</td><td>Mekanikal</td></tr>
-                <tr><td>2023</td><td>RSUD Empat Lawang</td><td>Sumsel</td><td>Sipil/Lingkungan</td></tr>
-                <tr><td>2014</td><td>Yayasan Santo Markus</td><td>Jakarta Timur</td><td>Gedung Sekolah</td></tr>
-                <tr><td>2005</td><td>Hotel Crowne Plaza</td><td>Jakarta Pusat</td><td>Interior Fit-Out</td></tr>
-                <tr><td>1994</td><td>Bank Pacific</td><td>Jakarta Pusat</td><td>Elektrikal</td></tr>
-                <tr><td>1993</td><td>Menara Hijau</td><td>Jakarta Timur</td><td>Mekanikal</td></tr>
-            </tbody>
-        </table>
+        <p>Reliable Track Record Since 1993</p>
+    </header>
+
+    <div class="container">
+        <nav class="back-nav"><a href="index.html">← Return to Gallery</a></nav>
+
+        <section class="project-section">
+            <div class="section-title">Featured Specializations</div>
+            <div class="detailed-projects">
+                <div class="project-card">
+                    <h3>Steel Structure Construction</h3>
+                    <p>Fabrication and erection of heavy steel structures for industrial facilities.</p>
+                    <div class="location">Mangoli, Maluku Utara</div>
+                </div>
+                <div class="project-card">
+                    <h3>High-End Interior Fit-Out</h3>
+                    <p>Premium interior finishing for five-star hospitality brands.</p>
+                    <div class="location">Hotel Crowne Plaza, Jakarta</div>
+                </div>
+                <div class="project-card">
+                    <h3>Industrial Fuel Systems</h3>
+                    <p>Installation of large-scale fuel storage and piping for mining operations.</p>
+                    <div class="location">Borneo Prima, Kalimantan</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <div class="section-title">Complete Project Timeline</div>
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Proyek / Klien</th>
+                        <th>Lokasi</th>
+                        <th>Pekerjaan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="year-col">2025</td><td>Steel Structure Mangoli</td><td>Maluku Utara</td><td>Konstruksi Baja Berat</td></tr>
+                    <tr><td class="year-col">2025</td><td>Komang Beach Cottages</td><td>Nusa Penida, Bali</td><td>Struktur Kayu & Sipil</td></tr>
+                    <tr><td class="year-col">2024</td><td>PT. Muara Alam Sejahtera</td><td>Lahat, Sumsel</td><td>High Mast Lamp & Foundation</td></tr>
+                    <tr><td class="year-col">2024</td><td>Fuel Tank Borneo Prima</td><td>Kalimantan Selatan</td><td>Mekanikal & Fabrikasi</td></tr>
+                    <tr><td class="year-col">2023</td><td>RSUD Empat Lawang</td><td>Sumsel</td><td>Kolam Retensi</td></tr>
+                    <tr><td class="year-col">2022</td><td>Toyota Cikunir Workshop</td><td>Bekasi</td><td>Konstruksi Workshop</td></tr>
+                    <tr><td class="year-col">2014</td><td>Yayasan Santo Markus</td><td>Jakarta Timur</td><td>Gedung Sekolah</td></tr>
+                    <tr><td class="year-col">2005</td><td>Hotel Crowne Plaza</td><td>Jakarta Pusat</td><td>Interior Fit-Out</td></tr>
+                    <tr><td class="year-col">1994</td><td>Bank Pacific (Pura Selokamas)</td><td>Jakarta Pusat</td><td>Elektrikal</td></tr>
+                    <tr><td class="year-col">1993</td><td>Menara Hijau</td><td>Jakarta Timur</td><td>Mekanikal</td></tr>
+                </tbody>
+            </table>
+        </section>
     </div>
 </body>
 </html>
