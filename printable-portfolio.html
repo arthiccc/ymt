@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Portfolio | CV. Yudhistira Mandala Teknik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #4a4a4a;
+            --accent: #0066cc;
+            --bg: #ffffff;
+            --gray: #f2f2f2;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--secondary); background: white; }
+
+        /* Print Settings */
+        @media print {
+            @page { size: A4; margin: 0; }
+            body { -webkit-print-color-adjust: exact; }
+            .no-print { display: none; }
+            .page-break { page-break-after: always; }
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 20mm;
+            margin: 0 auto;
+            position: relative;
+            background: white;
+            overflow: hidden;
+        }
+
+        /* Cover Page */
+        .cover {
+            background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), url('pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/Steel_Mangoli_01.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .cover-content h1 { font-size: 3rem; letter-spacing: 8px; font-weight: 700; border-bottom: 4px solid white; padding-bottom: 1rem; margin-bottom: 1.5rem; text-transform: uppercase; }
+        .cover-content h2 { font-size: 1.2rem; font-weight: 300; letter-spacing: 4px; text-transform: uppercase; }
+        .cover-footer { position: absolute; bottom: 40px; font-size: 0.8rem; letter-spacing: 2px; opacity: 0.8; }
+
+        /* Section Styling */
+        h2.section-title { font-size: 1.5rem; color: var(--primary); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 1.5rem; border-left: 10px solid var(--primary); padding-left: 1rem; }
+        p { font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem; text-align: justify; }
+
+        /* Project Story Styling */
+        .story-header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ddd; margin-bottom: 2rem; padding-bottom: 5px; }
+        .story-header h3 { font-size: 1.2rem; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+        .story-header span { font-size: 0.7rem; font-weight: 700; color: #999; }
+
+        .story-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .step-box { margin-bottom: 20px; }
+        .step-box h4 { font-size: 0.8rem; color: var(--primary); text-transform: uppercase; margin-bottom: 8px; border-bottom: 1px dashed #ccc; padding-bottom: 4px; display: flex; align-items: center; }
+        .step-box h4 b { background: var(--primary); color: white; width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; margin-right: 8px; font-size: 0.6rem; }
+        .step-box p { font-size: 0.75rem; margin-bottom: 10px; }
+        .step-img { width: 100%; height: 140px; object-fit: cover; border: 1px solid #eee; }
+
+        /* Project Timeline Table */
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th { background: var(--primary); color: white; padding: 10px; text-align: left; font-size: 0.7rem; text-transform: uppercase; }
+        td { padding: 10px; border-bottom: 1px solid #ddd; font-size: 0.75rem; }
+        .year { font-weight: 700; color: var(--primary); }
+
+        /* Footer */
+        .footer { position: absolute; bottom: 15mm; left: 20mm; right: 20mm; font-size: 0.6rem; border-top: 1px solid #eee; padding-top: 10px; display: flex; justify-content: space-between; color: #999; }
+
+        .btn-print {
+            position: fixed; top: 20px; right: 20px; background: var(--accent); color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+<button class="btn-print no-print" onclick="window.print()">PRINT TO PDF</button>
+
+<!-- PAGE 1: COVER -->
+<div class="page cover page-break">
+    <div class="cover-content">
+        <h2>Corporate Portfolio</h2>
+        <h1>Yudhistira Mandala Teknik</h1>
+        <h2>Integrated Engineering Solutions Since 1993</h2>
+    </div>
+    <div class="cover-footer">CONSTRUCTION • MECHANICAL • ELECTRICAL • CIVIL</div>
+</div>
+
+<!-- PAGE 2: PROFILE -->
+<div class="page page-break">
+    <h2 class="section-title">Company Overview</h2>
+    <p>CV. Yudhistira Mandala Teknik adalah perusahaan jasa konstruksi, mekanikal, elektrikal, dan sipil yang berbasis di Bekasi. Didirikan pada 30 Juni 1993, kami telah melayani berbagai klien mulai dari sektor perbankan, industri, pendidikan, hingga infrastruktur publik selama lebih dari 30 tahun.</p>
+    <p>Dibawah kepemimpinan Bapak Kolaga Eri Sudewo, kami mengedepankan profesionalisme dan kualitas dalam setiap pekerjaan. Keahlian kami mencakup fabrikasi baja berat, sistem otomasi industri, dan pengembangan infrastruktur sipil di berbagai wilayah Indonesia.</p>
+    
+    <h2 class="section-title">Core Services</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+            <img src="pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/Steel_Mangoli_01.jpg" style="width:100%; height:180px; object-fit:cover;">
+            <div style="font-size:0.7rem; font-weight:700; margin-top:5px; color:var(--primary);">HEAVY STEEL CONSTRUCTION</div>
+        </div>
+        <div style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+            <img src="Elec_Panel_01.jpg" style="width:100%; height:180px; object-fit:cover;">
+            <div style="font-size:0.7rem; font-weight:700; margin-top:5px; color:var(--primary);">ELECTRICAL & AUTOMATION</div>
+        </div>
+    </div>
+
+    <div class="footer"><span>CV. Yudhistira Mandala Teknik</span><span>Page 02</span></div>
+</div>
+
+<!-- PAGE 3: STORY MALUKU -->
+<div class="page page-break">
+    <div class="story-header">
+        <h3>Steel Structure Construction</h3>
+        <span>Location: Mangoli, Maluku Utara</span>
+    </div>
+    <div class="story-steps">
+        <div class="step-box">
+            <h4><b>1</b> Technical Survey</h4>
+            <p>Pemetaan koordinat dan land clearing di lokasi remote untuk memastikan kestabilan pondasi baja berat.</p>
+            <img src="pics/Other_Project_01/Misc_Proj_1_01.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>2</b> Structure Erection</h4>
+            <p>Ereksi kolom H-Beam utama dengan manajemen logistik presisi dari workshop ke lokasi proyek.</p>
+            <img src="pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/Steel_Mangoli_01.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>3</b> Industrial Roofing</h4>
+            <p>Pemasangan gording dan metal sheet dengan standar K3 tinggi untuk keamanan operasional jangka panjang.</p>
+            <img src="pics/Work Shop project Toyota Cikunir- Bekasi/Toyota_Wshop_01.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>4</b> Final Handover</h4>
+            <p>Inspeksi akhir kualitas sambungan dan struktur sebelum serah terima operasional kepada klien.</p>
+            <img src="pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/Steel_Mangoli_02.jpg" class="step-img">
+        </div>
+    </div>
+    <div class="footer"><span>CV. Yudhistira Mandala Teknik</span><span>Page 03</span></div>
+</div>
+
+<!-- PAGE 4: STORY BALI -->
+<div class="page page-break">
+    <div class="story-header">
+        <h3>Resort Construction</h3>
+        <span>Location: Nusa Penida, Bali</span>
+    </div>
+    <div class="story-steps">
+        <div class="step-box">
+            <h4><b>1</b> Foundation Phase</h4>
+            <p>Pembangunan pondasi beton diperkuat untuk mendukung struktur kayu di area pesisir pantai.</p>
+            <img src="Bali_Cottage_15.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>2</b> Wood Frame Erection</h4>
+            <p>Instalasi rangka kayu menggunakan teknik joinery tradisional untuk estetika resort premium.</p>
+            <img src="Bali_Cottage_19.jpg" class="step-img">
+        </div>
+        <div style="grid-column: span 2;">
+            <img src="Bali_Cottage_39.jpg" style="width:100%; height:300px; object-fit:cover; border:1px solid #eee;">
+            <div style="font-size:0.7rem; font-weight:700; margin-top:5px; color:var(--primary); text-transform:uppercase;">Architectural Finishing Detail</div>
+        </div>
+    </div>
+    <div class="footer"><span>CV. Yudhistira Mandala Teknik</span><span>Page 04</span></div>
+</div>
+
+<!-- PAGE 5: STORY LAHAT -->
+<div class="page page-break">
+    <div class="story-header">
+        <h3>Mining Infrastructure</h3>
+        <span>Location: Lahat, Sumatera Selatan</span>
+    </div>
+    <div class="story-steps">
+        <div class="step-box">
+            <h4><b>1</b> Anchor Setting</h4>
+            <p>Instalasi anchor bolt khusus untuk menahan beban dinamis menara lampu di area tambang terbuka.</p>
+            <img src="Infras_Lahat_40.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>2</b> Concrete Casting</h4>
+            <p>Pengecoran base plate dengan beton mutu tinggi yang tahan terhadap vibrasi alat berat.</p>
+            <img src="Infras_Lahat_41.jpg" class="step-img">
+        </div>
+        <div style="grid-column: span 2;">
+            <img src="Infras_Lahat_42.jpg" style="width:100%; height:300px; object-fit:cover; border:1px solid #eee;">
+            <div style="font-size:0.7rem; font-weight:700; margin-top:5px; color:var(--primary); text-transform:uppercase;">High Mast Tower Erection Phase</div>
+        </div>
+    </div>
+    <div class="footer"><span>CV. Yudhistira Mandala Teknik</span><span>Page 05</span></div>
+</div>
+
+<!-- PAGE 6: STORY ELECTRICAL & POND -->
+<div class="page page-break">
+    <div class="story-header">
+        <h3>Industrial Automation & Water Management</h3>
+        <span>Multi-Division Capability</span>
+    </div>
+    <div class="story-steps">
+        <div class="step-box">
+            <h4><b>1</b> Precision PLC Control</h4>
+            <p>Perakitan panel kontrol dengan manajemen kabel sistematis untuk otomasi industri grade tinggi.</p>
+            <img src="Elec_Panel_01.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>2</b> Component Integration</h4>
+            <p>Instalasi switchgear dan relay industrial untuk menjamin uptime operasional mesin klien.</p>
+            <img src="Elec_Panel_02.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>3</b> Hydrological Systems</h4>
+            <p>Rekayasa kolam retensi (RSUD Empat Lawang) untuk pengelolaan air dan pencegahan banjir.</p>
+            <img src="RSUD_Retensi_66.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>4</b> Civil Slope Stability</h4>
+            <p>Perkuatan dinding penahan tanah dan normalisasi saluran pada sistem infrastruktur air.</p>
+            <img src="RSUD_Retensi_86.jpg" class="step-img">
+        </div>
+    </div>
+    <div class="footer"><span>CV. Yudhistira Mandala Teknik</span><span>Page 06</span></div>
+</div>
+
+<!-- PAGE 7: STORY FUEL & LAND -->
+<div class="page page-break">
+    <div class="story-header">
+        <h3>Fuel Systems & Land Development</h3>
+        <span>Industrial & Civil Specialization</span>
+    </div>
+    <div class="story-steps">
+        <div class="step-box">
+            <h4><b>1</b> Fuel Tank Installation</h4>
+            <p>Fabrikasi bund wall dan instalasi tangki bahan bakar untuk operasional pertambangan Borneo Prima.</p>
+            <img src="pics/Fuel Tank Project Borneo Prima Kelimatan Selatan/FuelTank_Borneo_01.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>2</b> Industrial Piping</h4>
+            <p>Sistem perpipaan bahan bakar dengan standar keamanan tinggi dan pressure testing berkala.</p>
+            <img src="pics/Fuel Tank Project Borneo Prima Kelimatan Selatan/FuelTank_Borneo_05.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>3</b> Land Grading Phase</h4>
+            <p>Proses cut & fill dan pematangan lahan skala besar di area perbukitan Batu, Malang.</p>
+            <img src="pics/Cut & Fill project at Batu - Malang/Land_Malang_01.jpg" class="step-img">
+        </div>
+        <div class="step-box">
+            <h4><b>4</b> Soil Compaction</h4>
+            <p>Pemadatan tanah lapis demi lapis untuk menjamin daya dukung struktur bangunan di atasnya.</p>
+            <img src="pics/Cut & Fill project at Batu - Malang/Land_Malang_05.jpg" class="step-img">
+        </div>
+    </div>
+    <div class="footer"><span>CV. Yudhistira Mandala Teknik</span><span>Page 07</span></div>
+</div>
+
+<!-- PAGE 8: HISTORY & CONTACT -->
+<div class="page">
+    <h2 class="section-title">Project History (1993-2025)</h2>
+    <table>
+        <thead>
+            <tr><th>Tahun</th><th>Proyek / Klien</th><th>Lokasi</th><th>Kategori</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="year">2025</td><td>Steel Structure Mangoli</td><td>Maluku Utara</td><td>Konstruksi Baja</td></tr>
+            <tr><td class="year">2025</td><td>Komang Beach Cottages</td><td>Bali</td><td>Struktur Kayu</td></tr>
+            <tr><td class="year">2024</td><td>PT. Muara Alam Sejahtera</td><td>Sumsel</td><td>Infras Tambang</td></tr>
+            <tr><td class="year">2024</td><td>Fuel Tank Borneo Prima</td><td>Kalimantan</td><td>Mekanikal</td></tr>
+            <tr><td class="year">2023</td><td>RSUD Empat Lawang</td><td>Sumsel</td><td>Lingkungan</td></tr>
+            <tr><td class="year">2022</td><td>Toyota Cikunir Workshop</td><td>Bekasi</td><td>Gedung</td></tr>
+            <tr><td class="year">2014</td><td>Yayasan Santo Markus</td><td>Jakarta</td><td>Pendidikan</td></tr>
+            <tr><td class="year">2005</td><td>Hotel Crowne Plaza</td><td>Jakarta</td><td>Interior Fit-out</td></tr>
+            <tr><td class="year">1994</td><td>Bank Pacific</td><td>Jakarta</td><td>Elektrikal</td></tr>
+        </tbody>
+    </table>
+
+    <h2 class="section-title" style="margin-top: 2rem;">Contact Information</h2>
+    <div style="font-size: 0.85rem; line-height: 1.8;">
+        <strong>Address:</strong> Jl. Mangga Blok C 33 No. 34, Bekasi 17510, Indonesia.<br>
+        <strong>WhatsApp:</strong> 0812-9854-1234<br>
+        <strong>Email:</strong> yudhistiramt01@gmail.com<br>
+        <strong>Website:</strong> https://arthiccc.github.io/ymt/
+    </div>
+    <div class="footer"><span>CV. Yudhistira Mandala Teknik</span><span>Page 08</span></div>
+</div>
+
+</body>
+</html>
