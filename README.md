@@ -1,40 +1,40 @@
-# CV. Yudhistira Mandala Teknik
+# Yudhistira Mandala Teknik
 ### *Integrated Engineering Solutions Since 1993*
 
-Welcome to the digital portfolio of **CV. Yudhistira Mandala Teknik**. We specialize in Civil Construction, Mechanical/Electrical Engineering (M/E), and Industrial Infrastructure.
+Welcome to the official digital portfolio of **CV. Yudhistira Mandala Teknik**. We provide professional contracting services in Civil Construction, Mechanical/Electrical (M/E), and Industrial Infrastructure across Indonesia.
 
 ---
 
-## 📁 Quick Access Portfolio
-Click the links below to explore our project divisions and documentation:
+## 🌐 Digital Portfolio
+Explore our interactive technical showcase and project narratives:
 
-*   **[🏢 Company Profile](Company_Profile.md)** - History, Legalities, and Core Services.
-*   **[📜 Full Project List (1993-2025)](Portfolio_Booklet.md)** - A complete record of our 30-year journey.
-*   **[📸 Technical Photo Index](Index_of_Photos.md)** - Organized visual evidence of our work.
+*   **[📸 Project Gallery Feed](https://arthiccc.github.io/ymt/)** - Visual proof of work with interactive technical stories.
+*   **[🏢 Corporate Profile](https://arthiccc.github.io/ymt/profile.html)** - History, services, and official legal identity.
+*   **[📜 Master Timeline](https://arthiccc.github.io/ymt/projects.html)** - A comprehensive record of completions from 1993 to 2025.
 
 ---
 
-## 🏗️ Project Divisions (Click to View Images)
-Explore our work directly through these organized folders:
+## 🖨️ Printable PDF Documents
+For clients and formal presentations, we provide high-end printable templates. Open these in your browser and select **"Print to PDF"** (Background Graphics: ON, Margins: NONE).
 
-### ⚡ [Electrical & Automation](Elec_Panel_01.jpg)
-*Panel PLC, Industrial Wiring, and Power Distribution.*
+*   **[🏆 Ultimate Master Profile (10 Pages)](YMT_Master_Profile.html)** - Full company details, legalities, and deep technical stories.
+*   **[📋 Complete Portfolio (3 Pages)](printable-portfolio-complete.html)** - Concise overview with full legal info and project history.
+*   **[💎 Minimalist Version (3 Pages)](printable-portfolio.html)** - High-impact visual summary for fast distribution.
 
-### 🏨 [Hospitality & Residential](Bali_Cottage_19.jpg)
-*Resorts (Nusa Penida), Schools (St. Markus), and Luxury Housing.*
+---
 
-### 🏭 [Steel & Industrial Structures](pics/Steel%20structure%20project%20at%20Mangoli%20Maluku%20Utara/Steel_Mangoli_01.jpg)
-*Factories in Maluku, Toyota Workshops, and Fuel Systems.*
-
-### 🚜 [Civil & Infrastructure](Infras_Lahat_40.jpg)
-*Mining Infrastructure, Cut & Fill (Malang), and Water Management.*
+## 🛠️ Specialized Divisions
+*   **Industrial Steel:** H-Beam fabrication, factory erection, and automotive workshops.
+*   **M/E & Automation:** PLC control panels, high-voltage wiring, and motor maintenance.
+*   **Infrastructure:** Mining foundations, high-mast lighting, and heavy earthworks.
+*   **Environmental:** WWTP systems, hydrological engineering, and urban drainage.
 
 ---
 
 ## 📍 Office & Contact
-*   **Address:** Jl. Mangga Blok C 33 No. 34, Kompas Indah Estate, Tambun Selatan, Bekasi 17510.
+*   **HQ Address:** [Jl. Mangga Blok C 33 No. 34, Kompas Indah Estate, Bekasi 17510](https://maps.app.goo.gl/KKbbACYWFVaMH6xf7)
+*   **WhatsApp:** [0812-9854-1234](https://wa.me/6281298541234)
 *   **Email:** [yudhistiramt01@gmail.com](mailto:yudhistiramt01@gmail.com)
-*   **Phone/WA:** 0812 9854 1234
 
 ---
-*Built for speed and accessibility on all devices.*
+*Built for performance and technical authority.*
