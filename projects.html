@@ -21,7 +21,7 @@
             background-color: var(--bg);
         }
         header {
-            padding: 6rem 2rem 4rem;
+            padding: 8rem 2rem 4rem;
             text-align: center;
             background: var(--gray);
             border-bottom: 1px solid var(--border);
@@ -41,7 +41,7 @@
         .container { 
             max-width: 1100px; 
             margin: 0 auto; 
-            padding: 4rem 2rem 6rem; 
+            padding: 4rem 2rem 8rem; 
         }
         .back-nav { margin-bottom: 3rem; }
         .back-nav a { 
@@ -53,7 +53,7 @@
             letter-spacing: 1px;
         }
 
-        .project-section { margin-bottom: 5rem; }
+        .project-section { margin-bottom: 6rem; }
         .section-title {
             font-size: 1rem;
             font-weight: 700;
@@ -72,41 +72,48 @@
             margin-left: 20px;
         }
 
+        /* Specialized Grid */
         .detailed-projects {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 30px;
             margin-bottom: 4rem;
         }
         .project-card {
             background: white;
             border: 1px solid var(--border);
-            padding: 2rem;
-            transition: all 0.3s;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            position: relative;
         }
         .project-card:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
             border-color: var(--accent);
+            transform: translateY(-5px);
         }
         .project-card h3 {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 700;
             margin-bottom: 1rem;
             text-transform: uppercase;
+            color: var(--primary);
         }
         .project-card p {
             font-size: 0.85rem;
             color: #666;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
         .project-card .location {
-            font-weight: 600;
+            font-weight: 700;
             color: var(--text);
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            border-top: 1px solid var(--border);
+            padding-top: 10px;
         }
 
+        /* Long Timeline Table */
         .history-table {
             width: 100%;
             border-collapse: collapse;
@@ -115,7 +122,7 @@
         }
         .history-table th {
             text-align: left;
-            padding: 1.2rem;
+            padding: 1.5rem;
             background: #1a1a1a;
             color: white;
             text-transform: uppercase;
@@ -123,16 +130,17 @@
             font-weight: 600;
         }
         .history-table td {
-            padding: 1.2rem;
+            padding: 1.2rem 1.5rem;
             border-bottom: 1px solid var(--border);
         }
         .history-table tr:hover { background: var(--gray); }
-        .year-col { font-weight: 700; color: var(--accent); width: 80px; }
+        .year-col { font-weight: 700; color: var(--accent); width: 100px; }
+        .cat-tag { font-size: 0.65rem; font-weight: 700; padding: 2px 8px; background: #eee; border-radius: 4px; text-transform: uppercase; }
 
         @media (max-width: 768px) {
             header h1 { font-size: 1.8rem; }
             .history-table thead { display: none; }
-            .history-table tr { display: block; margin-bottom: 20px; border: 1px solid var(--border); }
+            .history-table tr { display: block; margin-bottom: 25px; border: 1px solid var(--border); background: white; }
             .history-table td { display: block; text-align: right; padding-left: 50%; position: relative; }
             .history-table td::before {
                 content: attr(data-label);
@@ -150,58 +158,99 @@
 <body>
     <header>
         <h1>Project History</h1>
-        <p>Reliable Track Record Since 1993</p>
+        <p>A 30-Year Legacy of Engineering Excellence</p>
     </header>
 
     <div class="container">
         <nav class="back-nav"><a href="index.html">← Return to Gallery</a></nav>
 
+        <!-- Featured Section -->
         <section class="project-section">
-            <div class="section-title">Featured Specializations</div>
+            <div class="section-title">Core Technical Divisions</div>
             <div class="detailed-projects">
                 <div class="project-card">
-                    <h3>Steel Structure Construction</h3>
-                    <p>Fabrication and erection of heavy steel structures for industrial facilities.</p>
-                    <div class="location">Mangoli, Maluku Utara</div>
+                    <h3>Heavy Steel & Structure</h3>
+                    <p>Industrial H-Beam fabrication, factory erection, and automotive workshop construction.</p>
+                    <div class="location">Maluku, Bekasi, & Jakarta</div>
                 </div>
                 <div class="project-card">
-                    <h3>High-End Interior Fit-Out</h3>
-                    <p>Premium interior finishing for five-star hospitality brands.</p>
-                    <div class="location">Hotel Crowne Plaza, Jakarta</div>
+                    <h3>M/E & Precision Automation</h3>
+                    <p>PLC Logic Control, circuit repair, high-voltage wiring, and building automation systems.</p>
+                    <div class="location">Various Industrial Sites</div>
                 </div>
                 <div class="project-card">
-                    <h3>Industrial Fuel Systems</h3>
-                    <p>Installation of large-scale fuel storage and piping for mining operations.</p>
-                    <div class="location">Borneo Prima, Kalimantan</div>
+                    <h3>Hydrological Engineering</h3>
+                    <p>Water treatment facilities (WWTP), industrial pumps, and urban retention pond systems.</p>
+                    <div class="location">Lahat, Empat Lawang, & Slipi</div>
+                </div>
+                <div class="project-card">
+                    <h3>Civil Infrastructure</h3>
+                    <p>High-Mast tower foundations, heavy earthworks (Cut & Fill), and deep drainage culverts.</p>
+                    <div class="location">Sumsel, Malang, & Kalimantan</div>
                 </div>
             </div>
         </section>
 
+        <!-- The Long List Timeline -->
         <section class="project-section">
-            <div class="section-title">Complete Project Timeline</div>
+            <div class="section-title">Master Timeline (1993 - 2025)</div>
             <table class="history-table">
                 <thead>
                     <tr>
                         <th>Tahun</th>
                         <th>Proyek / Klien</th>
                         <th>Lokasi</th>
-                        <th>Pekerjaan</th>
+                        <th>Kategori Pekerjaan</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td class="year-col">2025</td><td>Steel Structure Mangoli</td><td>Maluku Utara</td><td>Konstruksi Baja Berat</td></tr>
-                    <tr><td class="year-col">2025</td><td>Komang Beach Cottages</td><td>Nusa Penida, Bali</td><td>Struktur Kayu & Sipil</td></tr>
-                    <tr><td class="year-col">2024</td><td>PT. Muara Alam Sejahtera</td><td>Lahat, Sumsel</td><td>High Mast Lamp & Foundation</td></tr>
-                    <tr><td class="year-col">2024</td><td>Fuel Tank Borneo Prima</td><td>Kalimantan Selatan</td><td>Mekanikal & Fabrikasi</td></tr>
-                    <tr><td class="year-col">2023</td><td>RSUD Empat Lawang</td><td>Sumsel</td><td>Kolam Retensi</td></tr>
-                    <tr><td class="year-col">2022</td><td>Toyota Cikunir Workshop</td><td>Bekasi</td><td>Konstruksi Workshop</td></tr>
-                    <tr><td class="year-col">2014</td><td>Yayasan Santo Markus</td><td>Jakarta Timur</td><td>Gedung Sekolah</td></tr>
-                    <tr><td class="year-col">2005</td><td>Hotel Crowne Plaza</td><td>Jakarta Pusat</td><td>Interior Fit-Out</td></tr>
-                    <tr><td class="year-col">1994</td><td>Bank Pacific (Pura Selokamas)</td><td>Jakarta Pusat</td><td>Elektrikal</td></tr>
-                    <tr><td class="year-col">1993</td><td>Menara Hijau</td><td>Jakarta Timur</td><td>Mekanikal</td></tr>
+                    <!-- 2020s -->
+                    <tr><td class="year-col">2025</td><td>Steel Structure Mangoli</td><td>Maluku Utara</td><td><span class="cat-tag">Steel</span></td></tr>
+                    <tr><td class="year-col">2025</td><td>Komang Beach Cottages</td><td>Nusa Penida, Bali</td><td><span class="cat-tag">Hospitality</span></td></tr>
+                    <tr><td class="year-col">2024</td><td>PT. Muara Alam Sejahtera (High Mast)</td><td>Lahat, Sumsel</td><td><span class="cat-tag">Mining Infras</span></td></tr>
+                    <tr><td class="year-col">2024</td><td>WWTP Industrial System</td><td>Industrial Site</td><td><span class="cat-tag">Environment</span></td></tr>
+                    <tr><td class="year-col">2024</td><td>Fuel Tank Borneo Prima</td><td>Kalimantan Selatan</td><td><span class="cat-tag">Mechanical</span></td></tr>
+                    <tr><td class="year-col">2024</td><td>Telecom IT Infrastructure</td><td>Strategic Hub</td><td><span class="cat-tag">Network</span></td></tr>
+                    <tr><td class="year-col">2023</td><td>RSUD Empat Lawang (Retention Pond)</td><td>Sumatera Selatan</td><td><span class="cat-tag">Civil</span></td></tr>
+                    <tr><td class="year-col">2022</td><td>Toyota Cikunir Workshop</td><td>Bekasi</td><td><span class="cat-tag">Building</span></td></tr>
+                    <tr><td class="year-col">2021</td><td>Land Clearing & Grading</td><td>Batu, Malang</td><td><span class="cat-tag">Earthworks</span></td></tr>
+                    <tr><td class="year-col">2020</td><td>PT. Lucky Print Abadi (Drainage)</td><td>Bekasi</td><td><span class="cat-tag">Sipil</span></td></tr>
+                    
+                    <!-- 2010s -->
+                    <tr><td class="year-col">2018</td><td>PT. Wak Prima Agung (Mockup COW)</td><td>Tambun, Bekasi</td><td><span class="cat-tag">Telecom</span></td></tr>
+                    <tr><td class="year-col">2015</td><td>Renovasi Dirut Wisma Kosgoro</td><td>Pondok Indah, Jkt</td><td><span class="cat-tag">Residential</span></td></tr>
+                    <tr><td class="year-col">2014</td><td>Yayasan Santo Markus 2</td><td>Jakarta Timur</td><td><span class="cat-tag">Education</span></td></tr>
+                    <tr><td class="year-col">2014</td><td>Wisma Jaya Artek 2</td><td>Slipi, Jakarta</td><td><span class="cat-tag">M/E/P</span></td></tr>
+                    <tr><td class="year-col">2014</td><td>PT. Amtex Indonesia</td><td>Manggarai, Jakarta</td><td><span class="cat-tag">Mechanical</span></td></tr>
+                    <tr><td class="year-col">2011-20</td><td>Wisma Slipi (Ongoing Maintenance)</td><td>Slipi, Jakarta</td><td><span class="cat-tag">Maintenance</span></td></tr>
+                    <tr><td class="year-col">2012</td><td>Bronze Reflective Glass Install</td><td>Jakarta Barat</td><td><span class="cat-tag">Architectural</span></td></tr>
+                    
+                    <!-- 2000s -->
+                    <tr><td class="year-col">2007</td><td>PT. Daewoo Logistics Indonesia</td><td>Jakarta Selatan</td><td><span class="cat-tag">M/E/P</span></td></tr>
+                    <tr><td class="year-col">2006</td><td>PT. Megaabdika Kharisma</td><td>Jakarta Selatan</td><td><span class="cat-tag">Mechanical</span></td></tr>
+                    <tr><td class="year-col">2005</td><td>Hotel Crowne Plaza Fit-Out</td><td>Jakarta Pusat</td><td><span class="cat-tag">Interior</span></td></tr>
+                    <tr><td class="year-col">2005</td><td>PT. Haman Rokko (Yamaha Motor)</td><td>Cakung, Jakarta</td><td><span class="cat-tag">Mechanical</span></td></tr>
+                    <tr><td class="year-col">2000</td><td>PT. Mitra Atedaselaras</td><td>Cibubur, Bogor</td><td><span class="cat-tag">Mechanical</span></td></tr>
+                    <tr><td class="year-col">2000</td><td>PT. D & M Indonesia</td><td>Cibitung, Bekasi</td><td><span class="cat-tag">Mechanical</span></td></tr>
+                    <tr><td class="year-col">2000</td><td>PT. Taiyo Sinar Raya Teknik</td><td>Cikarang, Bekasi</td><td><span class="cat-tag">Civil</span></td></tr>
+
+                    <!-- 1990s -->
+                    <tr><td class="year-col">1998</td><td>PT. Daimei Santana Indonesia</td><td>Karawang Barat</td><td><span class="cat-tag">Electrical</span></td></tr>
+                    <tr><td class="year-col">1998</td><td>PT. Chungsan Mitra International</td><td>Cileungsi, Bogor</td><td><span class="cat-tag">Civil</span></td></tr>
+                    <tr><td class="year-col">1997</td><td>PT. Sonny Electronics Indonesia</td><td>Cibitung, Bekasi</td><td><span class="cat-tag">Electrical</span></td></tr>
+                    <tr><td class="year-col">1995-14</td><td>Wisma Kosgoro</td><td>Jakarta Pusat</td><td><span class="cat-tag">M/E/P</span></td></tr>
+                    <tr><td class="year-col">1995</td><td>PT. Caturintex Dayaprima</td><td>Jakarta Pusat</td><td><span class="cat-tag">Interior</span></td></tr>
+                    <tr><td class="year-col">1994</td><td>Bank Pacific (PT. Pura Selokamas)</td><td>Jakarta Pusat</td><td><span class="cat-tag">Electrical</span></td></tr>
+                    <tr><td class="year-col">1994</td><td>PT. Drilltechindo Samudranusa</td><td>Jakarta Pusat</td><td><span class="cat-tag">Civil</span></td></tr>
+                    <tr><td class="year-col">1993</td><td>Menara Hijau (PT. Wijaya Engindo)</td><td>Jakarta Timur</td><td><span class="cat-tag">Mekanikal</span></td></tr>
                 </tbody>
             </table>
         </section>
     </div>
+
+    <footer style="padding: 4rem 2rem; text-align: center; border-top: 1px solid var(--border); font-size: 0.8rem; color: #888;">
+        <p>&copy; 2026 CV. Yudhistira Mandala Teknik</p>
+        <p>A Complete Record of Professional Contracting Services</p>
+    </footer>
 </body>
 </html>
