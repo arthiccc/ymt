@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint: Precision Electronics Repair | YMT</title>
+    <style>
+        :root { --blueprint-blue: #003366; --text: #333; --bg: #f8f9fa; --line: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Courier New", Courier, monospace; background: var(--bg); color: var(--text); padding: 20px; }
+        .blueprint-container { max-width: 1000px; margin: 40px auto; background: white; border: 2px solid var(--blueprint-blue); padding: 40px; box-shadow: 10px 10px 0px var(--blueprint-blue); }
+        .header-meta { border-bottom: 2px solid var(--blueprint-blue); padding-bottom: 20px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .header-meta h1 { text-transform: uppercase; font-size: 1.8rem; color: var(--blueprint-blue); }
+        .header-meta p { font-size: 0.8rem; font-weight: bold; }
+        .back-nav { margin-bottom: 20px; }
+        .back-nav a { text-decoration: none; color: var(--blueprint-blue); font-weight: bold; font-size: 0.9rem; }
+        .workflow { position: relative; padding-left: 50px; }
+        .workflow::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: var(--blueprint-blue); border-left: 2px dashed #ccc; }
+        .step { position: relative; margin-bottom: 60px; }
+        .step-num { position: absolute; left: -45px; width: 30px; height: 30px; background: var(--blueprint-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8rem; }
+        .step-content h3 { text-transform: uppercase; margin-bottom: 15px; font-size: 1.1rem; color: var(--blueprint-blue); }
+        .step-content p { font-family: sans-serif; font-size: 0.95rem; line-height: 1.6; color: #555; max-width: 600px; margin-bottom: 20px; }
+        .step-image { width: 100%; max-width: 700px; border: 1px solid var(--line); padding: 10px; background: #fff; }
+        .step-image img { width: 100%; height: auto; display: block; }
+    </style>
+</head>
+<body>
+<div class="blueprint-container">
+    <nav class="back-nav"><a href="index.html">← RETURN TO FEED</a></nav>
+    <div class="header-meta">
+        <div>
+            <p>PROJECT ID: YMT-ELEC-REP</p>
+            <h1>Precision Electronics & Logic Repair</h1>
+        </div>
+        <div style="text-align: right;">
+            <p>DIVISION: M&E / SPECIALIZED REPAIR</p>
+            <p>STATUS: WORKSHOP ACTIVE</p>
+        </div>
+    </div>
+    <div class="workflow">
+        <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+                <h3>Circuit Board Diagnostics</h3>
+                <p>Analisis kegagalan pada logic board and sistem kontrol industri. Menggunakan peralatan presisi untuk mengidentifikasi kerusakan komponen mikro-elektronik.</p>
+                <div class="step-image"><img src="pics/Project_Archive_07/Archive_07_01.jpg" alt="Diagnostics"></div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+                <h3>Component Level Integration</h3>
+                <p>Perbaikan and penggantian komponen kritis untuk mengembalikan fungsi operasional penuh pada modul kontrol mesin industri.</p>
+                <div class="step-image"><img src="pics/Project_Archive_07/Archive_07_06.jpg" alt="Repair Work"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
