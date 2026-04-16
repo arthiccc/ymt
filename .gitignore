@@ -7,6 +7,36 @@ Desktop.ini
 *.tmp
 *.log
 *.zip
+*.rar
+*.7z
 
-# Sensitive Legal Originals (Optional: Move to a private folder instead)
-# kop surat ymt.pdf
+# Text Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build Artifacts
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Backup Files
+*.bak
+*.backup
+
+# Private/Sensitive
+*.pdf
+kop*
+surat*
+
+# Cache
+.cache/
+__pycache__/
+*.pyc

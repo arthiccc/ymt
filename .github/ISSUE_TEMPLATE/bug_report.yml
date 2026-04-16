@@ -1,0 +1,32 @@
+name: Bug Report
+description: Report a bug in the website
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Report
+
+        Please describe the bug you found.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      placeholder: Describe the bug in detail...
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL (if applicable)
+      placeholder: https://arthiccc.github.io/ymt/
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other

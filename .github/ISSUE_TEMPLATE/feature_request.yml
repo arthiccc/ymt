@@ -1,0 +1,17 @@
+name: Feature Request
+description: Suggest a new feature for the website
+labels: enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Request
+
+        Please describe the feature you'd like to see added.
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      placeholder: Describe the feature in detail...
+    validations:
+      required: true
