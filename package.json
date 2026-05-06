@@ -1,0 +1,26 @@
+{
+  "name": "ymt",
+  "version": "1.0.0",
+  "description": "CV. Yudhistira Mandala Teknik - Solusi Teknik Terintegrasi",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthiccc/ymt.git"
+  },
+  "keywords": [
+    "konstruksi",
+    "construction",
+    "engineering",
+    "indonesia",
+    "ymt"
+  ],
+  "author": "CV. Yudhistira Mandala Teknik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arthiccc/ymt/issues"
+  },
+  "homepage": "https://arthiccc.github.io/ymt/"
+}
